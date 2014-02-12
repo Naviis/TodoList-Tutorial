@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Todo List</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css' >
+	<link rel="stylesheet" href="./css/style.css" type="text/css"/>
+</head>
+<body>
+	
+	<div id="wrapper">
+		
+		<h1>Todo list</h1>
+
+		<div id="form">
+			
+			<input type="text" value="" placeholder="Intitulé de la tâche" />
+			<button>Ajouter</button>
+
+		</div> <!-- /#form -->
+
+		<ul id="taskZone">
+			
+			<!-- 
+			-	Les tâches seront ajoutées ici via jquery sous le format : 
+			-	
+			-	<div class="task">Texte de la tâche <span></span></div>
+			-->
+
+		</ul> <!-- /#taskZone -->
+
+	</div> <!-- /#wrapper -->
+
+	<!-- Jquery -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+	<!--- Todo.js-->
+
+	<script src="js/todo.js"></script>
+
+	<!--- Création d'une instance de l'objet todo -->
+
+	<script>
+
+		// Instanciation de l'objet Todo
+		var todo = new Todo();
+
+		// Appel de la méthode d'initialisation
+		todo.init();
+	</script>
+
+</body>
+</html>
